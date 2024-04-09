@@ -1,0 +1,23 @@
+trigger:
+  branches:
+    include:
+      - "main"
+      - "master"
+
+pool:
+  vmImage: "windows-latest"
+
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: "3.11"
+
+  - script: |
+      cat ado_config.json
+      python -m pip install --upgrade pip
+      pip install -r ado_sync/scripts/requirements.txt
+    displayName: "Install Requirements"
+
+  - script: |
+      python ado_sync/scripts/sync_folder.py "$(SPECSYNC_PAT)"
+    displayName: "Sync tests"

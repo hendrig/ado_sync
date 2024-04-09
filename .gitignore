@@ -1,0 +1,44 @@
+# Arquivos e diretórios específicos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.pyproj
+*.python-version
+*.pyc
+
+# Ambiente virtual
+venv/
+env/
+ENV/
+
+# Artefatos de build
+dist/
+build/
+*.egg-info/
+
+# Arquivos de configuração
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.swp
+*.out
+*.err
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Testes
+tests/
+.pytest_cache/
+results/
+
+# Arquivos de configuração do editor
+sync_config.json
+.vscode

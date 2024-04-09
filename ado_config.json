@@ -1,0 +1,15 @@
+{
+  "paths": {
+    "features": "",
+    "tests": ""
+  },
+  "credentials": {
+    "personal_access_token": "",
+    "organization_name": "",
+    "project_name": ""
+  },
+  "constants": {
+    "TestPlanId": "",
+    "System.TeamProject": ""
+  }
+}
